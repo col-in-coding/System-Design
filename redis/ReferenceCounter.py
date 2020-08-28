@@ -28,8 +28,6 @@ class ReferenceCounter:
         return self.cli.delete(key)
 
 
-
-
 if __name__ == "__main__":
     counter = ReferenceCounter()
     key = 'video-bucket:xxx.mp4'
