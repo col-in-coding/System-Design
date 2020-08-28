@@ -11,11 +11,12 @@ class KafkaMsgReader(Thread):
         self.queue = queue
 
     def run(self):
-        i = 0
+        msg = 0
         while True:
+            # simulate the delay of message from Kafka
             time.sleep(1)
-            self.queue.put((self.name, i))
-            i += 1
+            self.queue.put((self.name, msg))
+            msg += 1
 
 
 if __name__ == "__main__":
