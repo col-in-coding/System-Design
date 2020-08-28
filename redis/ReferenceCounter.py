@@ -12,7 +12,7 @@ class ReferenceCounter:
         )
 
     def incrRef(self, key):
-        "Increase the reference, if not define it will auto be set to 0"
+        "Increase the reference, if not defined it will auto be set to 0"
         return self.cli.incr(key, amount=1)
 
     def decrRef(self, key):
