@@ -1,0 +1,11 @@
+name: SystemDesign
+channels:
+- conda-forge
+- anaconda
+dependencies:
+- numpy
+- pip
+- python=3.8
+- redis-py
+- pip:
+  - kafka-python
